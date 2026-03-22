@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/sayori5",
+      "destination": "https://www.gsatvik.in/Shadowveil-StudioZ/sayori",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "www.spiele-zone.vercel.app" }],
       "destination": "https://spiele-zone.vercel.app/",

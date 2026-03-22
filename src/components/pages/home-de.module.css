@@ -1,0 +1,108 @@
+.container {
+    padding: 6px;
+    background: #0b1a2a;
+    min-height: 100vh;
+}
+
+/* 🔹 Top */
+.top {
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.top h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #00e0ff;
+    text-shadow: 0 0 10px rgba(0,255,255,0.6);
+}
+
+.top p {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin: 2px 0 6px;
+}
+
+/* 🔥 GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 4px;
+    width: 100%;
+    padding: 0;
+}
+
+/* remove default ul */
+.grid li {
+    list-style: none;
+}
+
+/* 🔹 Tile */
+.tile {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Title overlay */
+.title {
+    font-size: 0.7rem;
+    background: rgba(0,0,0,0.6);
+    color: #0f0;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+}
+
+/* 🔹 Bottom */
+.bottom {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #888;
+    text-align: center;
+}
+
+.t2048 {
+  background-image: url('../../../public/images/2048.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.tsnake {
+  background-image: url('../../../public/images/snake-game.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.thangman {
+  background-image: url('../../../public/images/Hangman.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.tgc {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgXyY3YghqA-XEQJ1bd9ZyObbVRXASuGjEmw&s');
+  background-size: cover;
+  background-position: center;
+}
+.tmemory {
+  background-image: url('https://em-content.zobj.net/source/apple/114/four-leaf-clover_1f340.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.tbounce {
+  background-image: url('../../../public/images/bounce.png');
+  background-size: cover;
+  background-position: center;
+}

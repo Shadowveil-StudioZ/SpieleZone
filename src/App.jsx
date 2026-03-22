@@ -14,6 +14,8 @@ import AboutUs from './components/pages/AboutPage.jsx';
 import CU from './components/pages/ContactPage.jsx';
 import Prpo from './components/PrivacyPolicy.jsx';
 import Home2 from './components/pages/home2.jsx'
+// language
+import HomeDE from './components/pages/de-home.jsx';
 
 
 // Extras
@@ -39,7 +41,7 @@ const NotFound = () => (
 //   window.location.replace("https://gsatvik.in/shadowveil-studioz/sayori");
 //   return null;
 // }
-// due to alas i added it like this
+// due to alas i added it like this [it's alas... laziness]
 function Sayori() {
   useEffect(() => {
     const t = setTimeout(() => {
@@ -116,6 +118,7 @@ function App() {
             {/* Homepage */}
             <Route path="/" element={<Homepg />} />
             <Route path="/home" element={<Home2 />} />
+            <Route path="/home2" element={<HomeDE />} />
 
             {/* Game intros */}
             <Route path="/ghost-code" element={<GCintro />} />
