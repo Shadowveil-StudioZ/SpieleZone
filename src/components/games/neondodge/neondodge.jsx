@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Sphere, Box, PerspectiveCamera, Environment, ContactShadows } from '@react-three/drei';
+import { Box, PerspectiveCamera, Environment, ContactShadows } from '@react-three/drei';
 import * as THREE from 'three';
 import styles from './NeonDodge3D.module.css'
 
