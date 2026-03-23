@@ -78,7 +78,7 @@ const SnakeGame = () => {
         }
 
         setSnake(newSnake);
-    }, [direction, food, gameOver, snake]);
+    }, [direction, food, gameOver, snake, isStarted]);
 
     useEffect(() => {
         const interval = setInterval(moveSnake, 200);
