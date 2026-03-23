@@ -29,6 +29,7 @@ const COLORS = ['#ff4d4d', '#4dff88', '#4da6ff', '#ffcc4d', '#9d4dff'];
 
 // the top one i made, and it is not working so taking help of ai to make it look liek basketball or at least a ball with colour instead of black wires rolled together
 const PlayerBall = ({ positionX }) => {
+
   return (
     <group position={[positionX, -4, 0]}>
       {/* 1. The Glowing Orange Core */}
@@ -83,6 +84,42 @@ const NeonDodge3D = () => {
   // do not change the values... i have tried multiple and these one feels the best
 
   const speedRef = useRef(0.1);
+
+  useEffect(() => {
+          const prevTitle = document.title;
+          const prevDesc = document.querySelector("meta[name='description']")?.getAttribute('content');
+  
+          document.title = 'NeonDodge3d Game - Spiele Zone by Shadowveil StudioZ';
+          let descTag = document.querySelector("meta[name='description']");
+          if (!descTag) {
+              descTag = document.createElement('meta');
+              descTag.name = 'description';
+              document.head.appendChild(descTag);
+          }
+          descTag.setAttribute('content', 'Play the NeonDodge3d online for free at Spiele Zone by Shadowveil StudioZ!');
+  
+          let keywords = document.querySelector("meta[name='keywords']");
+          if (!keywords) {
+              keywords = document.createElement('meta');
+              keywords.name = 'keywords';
+              document.head.appendChild(keywords);
+          }
+          keywords.setAttribute('content', 'Neon dodge, Neondodge3d, spiele zone 3d, spiele zone 3d games, online games, spiele zone neon, spiele zone satviky, satviky, saktvik gupta');
+  
+          let canonical = document.querySelector("link[rel='canonical']");
+          if (!canonical) {
+              canonical = document.createElement('link');
+              canonical.rel = 'canonical';
+              document.head.appendChild(canonical);
+          }
+          canonical.setAttribute('href', 'https://www.spielezone.xyz/neondodge3d');
+  
+          return () => {
+              document.title = prevTitle;
+              if (descTag && prevDesc) descTag.setAttribute('content', prevDesc);
+              if (canonical) canonical.setAttribute('href', 'https://www.spielezone.xyz/');
+          };
+      }, []);
 
   // Handle Keyboard
   // -------------------

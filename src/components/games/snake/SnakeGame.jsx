@@ -181,12 +181,12 @@ const SnakeGame = () => {
             canonical.rel = 'canonical';
             document.head.appendChild(canonical);
         }
-        canonical.setAttribute('href', 'https://spiele-zone.vercel.app/snake');
+        canonical.setAttribute('href', 'https://www.spielezone.xyz/snake');
 
         return () => {
             document.title = prevTitle;
             if (descTag && prevDesc) descTag.setAttribute('content', prevDesc);
-            if (canonical) canonical.setAttribute('href', 'https://spiele-zone.vercel.app/');
+            if (canonical) canonical.setAttribute('href', 'https://www.spielezone.xyz/');
         };
     }, []);
 
