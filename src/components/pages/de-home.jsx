@@ -9,7 +9,7 @@ const HomeDE = () => {
         { name: "Ghost Code", path: "/ghost-code", class: "tgc" },
         { name: "Memory Puzzle", path: "/memory", class: "tmemory" },
         { name: "Bounce", path: "/bounce", class: "tbounce" },
-        { name: "Node Dodge", path: "/nodedodge3d", class: "tnodedodge" }
+        { name: "Neon Dodge", path: "/neondodge3d", class: "tnd" }
     ];
     const repeatedGames = Array(6).fill(games).flat();
     return (

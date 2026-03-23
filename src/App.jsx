@@ -20,6 +20,8 @@ import HomeDE from './components/pages/de-home.jsx';
 
 // Extras
 import GCintro from './components/games/ghost-code/GhostCodeIntro.jsx';
+import Caa from './components/pages/credits.jsx';
+import Test from './components/games/test/test.jsx';
 
 // Games
 import Game2048 from './components/games/game-2048/Game2048.jsx';
@@ -131,11 +133,13 @@ function App() {
             <Route path="/memory" element={<MemoryPuzzle />} />
             <Route path="/bounce" element={<BounceGame />} />
             <Route path="/NeonDodge3D" element={<NeonDodge3D />} />
+            <Route path="/test" element={<Test />} />
 
             {/* Other pages */}
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/reach-us" element={<CU />} />
             <Route path="/privacy-policy" element={<Prpo />} />
+            <Route path="/acknowledgement" element={<Caa />} />
 
             {/* redirect */}
             <Route path="/sayori" element={<Sayori />} />

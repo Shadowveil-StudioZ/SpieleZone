@@ -189,7 +189,7 @@ const BounceGame = () => {
 
     return (
         <div className={styles["b-game-container"]}>
-            <canvas ref={canvasRef} width={600} height={400} />
+            <canvas className={styles["b-canvas"]} ref={canvasRef} width={600} height={400} />
             <div className={styles["b-game-controls"]}>
                 <button onClick={() => setPaused(!paused)} disabled={gameOver}>
                     {paused ? "Resume" : "Pause"}
